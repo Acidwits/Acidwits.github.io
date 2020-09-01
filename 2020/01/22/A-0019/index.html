@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <title>七牛云10G空间+MPic=个人图床服务 - Acid&#39;s Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="一个颓废宅的自我记录">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+  <link rel="shortcut icon" href="https://s2.ax1x.com/2019/08/18/mlnbcj.png" type="image/png" />
+  <meta name="description" content="前言最近因为原先那个 以为能用一辈子的 图床挂掉了:cry:急需新图床刚开始看中了路过图床，无限空间，每小时30张的限制也还可以但是实际使用过程中，上传不是特别方便（尤其对于我这种图片必须分类到相册里的人），速度也不是特别理想（本来以为巨快 秒天秒地秒空气 ）于是四处寻找空间够用、速度较快的新图床于是我找到了 七牛云">
+<meta property="og:type" content="article">
+<meta property="og:title" content="七牛云10G空间+MPic&#x3D;个人图床服务">
+<meta property="og:url" content="http://blog.acidwits.xyz/2020/01/22/A-0019/index.html">
+<meta property="og:site_name" content="Acid&#39;s Blog">
+<meta property="og:description" content="前言最近因为原先那个 以为能用一辈子的 图床挂掉了:cry:急需新图床刚开始看中了路过图床，无限空间，每小时30张的限制也还可以但是实际使用过程中，上传不是特别方便（尤其对于我这种图片必须分类到相册里的人），速度也不是特别理想（本来以为巨快 秒天秒地秒空气 ）于是四处寻找空间够用、速度较快的新图床于是我找到了 七牛云">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/qh6ofzgeUnmq.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/E91dz2EPsD1e.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/lDgBI9P2WgUf.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/5yjBCL2CEz9v.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/JW9Hq7YWq8qr.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/EqCTux4HvjXl.png">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/lRRfkB75Mnlm.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/R9SJFTMpd9J1.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/qdUbjKFRdxX2.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/wVuKzRkxvXaL.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/1eedCzT6WrDy.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/KjUs8gwcUkJA.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/aYhEgXU1CR1P.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/ltRglJ6cdBQg.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/mnENqRVpN0MY.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/Yp5Io6Fz4dhz.png?imageslim">
+<meta property="og:image" content="http://pm.acidwits.xyz/blog/20200122/DAFK6uPSzGwE.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/WTctqfycws8K.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200122/LNOm0ROmcxbU.png?imageslim">
+<meta property="article:published_time" content="2020-01-22T06:44:03.000Z">
+<meta property="article:modified_time" content="2020-09-01T15:01:20.878Z">
+<meta property="article:author" content="Acid">
+<meta property="article:tag" content="七牛云">
+<meta property="article:tag" content="个人图床">
+<meta property="article:tag" content="MPic">
+<meta property="article:tag" content="图床">
+<meta property="article:tag" content="云存储">
+<meta property="article:tag" content="免费">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://im.acidwits.xyz/blog/20200122/qh6ofzgeUnmq.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css?v=233" crossorigin>
+  
+  <link rel="stylesheet" href="/css/style.css?v=1598972879214">
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://s2.ax1x.com/2019/09/30/uNiRqe.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Acid" class="mdui-btn mdui-btn-icon"><img src="https://s2.ax1x.com/2019/08/18/mlK9dP.png" alt="Acid"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Acid">
+            <img src="https://s2.ax1x.com/2019/08/18/mlK9dP.png" alt="Acid" alt="Acid">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>14</div>
+        <div><span>标签</span>39</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/links.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:blog.acidwits.xyz" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/347988923" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/Acidwits/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/2019/" style="font-size: 10px;">2019</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Dism/" style="font-size: 10px;">Dism++</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/MPic/" style="font-size: 10px;">MPic</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/RaspBerry-Pi/" style="font-size: 10px;">RaspBerry Pi</a> <a href="/tags/Typora/" style="font-size: 10px;">Typora</a> <a href="/tags/Win10/" style="font-size: 10px;">Win10</a> <a href="/tags/Windows-To-Go/" style="font-size: 10px;">Windows To Go</a> <a href="/tags/Windows%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">Windows系统</a> <a href="/tags/spacedesk/" style="font-size: 10px;">spacedesk</a> <a href="/tags/%E4%B8%83%E7%89%9B%E4%BA%91/" style="font-size: 10px;">七牛云</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">个人图床</a> <a href="/tags/%E4%B8%AD%E5%A5%96/" style="font-size: 10px;">中奖</a> <a href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8/" style="font-size: 10px;">云存储</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 10px;">代码</a> <a href="/tags/%E5%85%8D%E8%B4%B9/" style="font-size: 10px;">免费</a> <a href="/tags/%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB/" style="font-size: 10px;">功夫熊猫</a> <a href="/tags/%E5%8A%B1%E5%BF%97/" style="font-size: 10px;">励志</a> <a href="/tags/%E5%90%AC%E6%AD%8C%E6%8A%A5%E5%91%8A/" style="font-size: 10px;">听歌报告</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">图床</a> <a href="/tags/%E5%AE%9E%E7%94%A8/" style="font-size: 10px;">实用</a> <a href="/tags/%E5%B1%8F%E5%B9%95/" style="font-size: 10px;">屏幕</a> <a href="/tags/%E5%B9%B2%E8%84%86%E9%9D%A2/" style="font-size: 10px;">干脆面</a> <a href="/tags/%E5%BA%B7%E5%B8%88%E5%82%85%E9%A6%99%E7%88%86%E8%84%86/" style="font-size: 10px;">康师傅香爆脆</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 10px;">效率</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E7%BD%91%E6%98%93%E4%BA%91/" style="font-size: 10px;">网易云</a> <a href="/tags/%E8%87%AA%E5%8A%A8/" style="font-size: 10px;">自动</a> <a href="/tags/%E8%8B%B1%E6%96%87/" style="font-size: 10px;">英文</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 10px;">视频</a> <a href="/tags/%E9%9B%86%E5%8D%A1/" style="font-size: 10px;">集卡</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">音乐</a>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+<style>
+.nexmoe-widget .archive-list-count{
+	position : absolute;
+	right: 15px;
+	top:9px;
+	color: #DDD;
+}
+</style>
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Acid
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 65.46875%;"> 
+          <img data-src="http://im.acidwits.xyz/blog/20200122/VLHXyBGYJ8fD.png" data-sizes="auto" alt="七牛云10G空间+MPic=个人图床服务" class="lazyload">
+          <h1>七牛云10G空间+MPic=个人图床服务</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年01月22日</a>
+    <a><i class="nexmoefont icon-areachart"></i>594 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+</div>
+
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%90%E6%96%99"><span class="toc-number">2.</span> <span class="toc-text">材料</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%83%E7%89%9B%E4%BA%91%E7%A9%BA%E9%97%B4%E9%85%8D%E7%BD%AE"><span class="toc-number">3.1.</span> <span class="toc-text">1.七牛云空间配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="toc-number">3.2.</span> <span class="toc-text">2.域名配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-MPic%E9%85%8D%E7%BD%AE"><span class="toc-number">3.3.</span> <span class="toc-text">3.MPic配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Upd-2020-1-29"><span class="toc-number">6.</span> <span class="toc-text">Upd 2020.1.29</span></a></li></ol>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <article>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近因为原先那个 <del>以为能用一辈子的</del> 图床挂掉了:cry:急需新图床<br>刚开始看中了<a target="_blank" rel="noopener" href="https://imgchr.com/">路过图床</a>，无限空间，每小时30张的限制也还可以<br>但是实际使用过程中，上传不是特别方便（尤其对于我这种图片必须分类到相册里的人），速度也不是特别理想（本来以为巨快 <del>秒天秒地秒空气</del> ）<br>于是四处寻找空间够用、速度较快的新图床<br>于是我找到了 <strong>七牛云</strong></p>
+<a id="more"></a>
+
+<h1 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h1><ol>
+<li>已实名认证的七牛云账号</li>
+<li>域名</li>
+<li><a target="_blank" rel="noopener" href="http://mpic.lzhaofu.cn/">MPic</a></li>
+</ol>
+<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><h2 id="1-七牛云空间配置"><a href="#1-七牛云空间配置" class="headerlink" title="1.七牛云空间配置"></a>1.七牛云空间配置</h2><p><a target="_blank" rel="noopener" href="https://www.qiniu.com/">官网</a></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/qh6ofzgeUnmq.png" alt="1" class="lazyload"></p>
+<p><a target="_blank" rel="noopener" href="https://portal.qiniu.com/"></a>添加对象存储</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/E91dz2EPsD1e.png" alt="2" class="lazyload"></p>
+<p>设置空间相关信息</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/lDgBI9P2WgUf.png" alt="3" class="lazyload"></p>
+<p>创建成功，可以看到测试域名是只有30天的，需要绑定自定义域名</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/5yjBCL2CEz9v.png" alt="4" class="lazyload"></p>
+<h2 id="2-域名配置"><a href="#2-域名配置" class="headerlink" title="2.域名配置"></a>2.域名配置</h2><p>先在自己的域名解析界面添加一条CNAME记录，内容随便网站</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/JW9Hq7YWq8qr.png" alt="5" class="lazyload"></p>
+<p>然后到七牛云绑定</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/EqCTux4HvjXl.png" alt="6" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/lRRfkB75Mnlm.png?imageslim" alt="7" class="lazyload"></p>
+<p>缓存配置直接选推荐配置<br><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/R9SJFTMpd9J1.png?imageslim" alt="8" class="lazyload"></p>
+<p>高级配置里的图片瘦身可以自己看着选，不选的话在后边MPic里也可以设置瘦身<br>某张图片137KB，瘦身后70.8KB<br>不过应该对云存储空间没什么节省，但瘦身后可以更快的看到图</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/qdUbjKFRdxX2.png?imageslim" alt="9" class="lazyload"></p>
+<p>之后创建即可</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/wVuKzRkxvXaL.png?imageslim" alt="10" class="lazyload"></p>
+<p>把CNAME记录改一下</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/1eedCzT6WrDy.png?imageslim" alt="11" class="lazyload"></p>
+<p>配置成功后，将这个域名保存为默认域名</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/KjUs8gwcUkJA.png?imageslim" alt="12" class="lazyload"></p>
+<h2 id="3-MPic配置"><a href="#3-MPic配置" class="headerlink" title="3.MPic配置"></a>3.MPic配置</h2><p><a target="_blank" rel="noopener" href="http://mpic.lzhaofu.cn/">官网</a>下载、安装软件<br>设置账号</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/aYhEgXU1CR1P.png?imageslim" alt="13" class="lazyload"></p>
+<p>填写相关信息、保存，图片瘦身可以选上</p>
+<p>域名后边那个 <code>/blog</code> 名字随意</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/ltRglJ6cdBQg.png?imageslim" alt="14" class="lazyload"></p>
+<p>其中两个key可以在密钥管理中查看</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/mnENqRVpN0MY.png?imageslim" alt="15" class="lazyload"></p>
+<p>拖一张图上传测试一下</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/Yp5Io6Fz4dhz.png?imageslim" alt="16" class="lazyload"></p>
+<pre><code class="md">![](http://pm.acidwits.xyz/blog/20200122/DAFK6uPSzGwE.png?imageslim)</code></pre>
+<p><img data-sizes="auto" data-src="http://pm.acidwits.xyz/blog/20200122/DAFK6uPSzGwE.png?imageslim" alt="17" class="lazyload"></p>
+<p>可以看到图，即搞定</p>
+<p>MPic真的挺好用的</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/WTctqfycws8K.png?imageslim" alt="18" class="lazyload"></p>
+<p>可以查看上传记录，有两种自动上传方式和三种链接形式可以选择<br><del>不过为什么是拖曳上传不是拖拽上传？</del></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>速度没毛病，方便没毛病 :laugh:</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200122/LNOm0ROmcxbU.png?imageslim" alt="19" class="lazyload"></p>
+<p>这篇博客图片应该说不少，所有图片大小有3.6MB，这样的话，10G能写2500+篇文章<del>像我这么鸽的话大概能用上一辈子吧</del></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/43861cb8b121">使用七牛云作图床</a></li>
+</ul>
+<h1 id="Upd-2020-1-29"><a href="#Upd-2020-1-29" class="headerlink" title="Upd 2020.1.29"></a>Upd 2020.1.29</h1><p>MPic竟然还可以上传mp3文件，以为会有文件类型限制的，不过这样更方便了哦😋</p>
+
+  </article>
+
+  
+    
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Acid<br>
+    <strong>本文链接：</strong><a href="http://blog.acidwits.xyz/2020/01/22/A-0019/" title="http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;01&#x2F;22&#x2F;A-0019&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;01&#x2F;22&#x2F;A-0019&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/MPic/" rel="tag">MPic</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E4%B8%83%E7%89%9B%E4%BA%91/" rel="tag">七牛云</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" rel="tag">个人图床</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8/" rel="tag">云存储</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%85%8D%E8%B4%B9/" rel="tag">免费</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'G8z8tDjtBWFJM97r1kSahY1H-gzGzoHsz',
+        appKey: 'osxsrHnLuCnfrDakcBDenRWI'
+    })
+</script>
+</section>
+  </div>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script >hljs.initHighlightingOnLoad();</script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+<script src="/js/app.js?v=1598972879215"></script>
+  
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?d3c7f222c42a92d80bbf4b64c9f0d266';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+
+</html>

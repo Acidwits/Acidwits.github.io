@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>文章归档：2020 - Acid&#39;s Blog</title>
+  <title>我写出了人生第一个爬虫程序！ - Acid&#39;s Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="一个颓废宅的自我记录">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,19 +12,25 @@
   
 
   <link rel="shortcut icon" href="https://s2.ax1x.com/2019/08/18/mlnbcj.png" type="image/png" />
-  <meta name="description" content="一个颓废宅的自我记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Acid&#39;s Blog">
-<meta property="og:url" content="http://blog.acidwits.xyz/archives/2020/index.html">
+  <meta name="description" content="Talk is cheap, show me the code.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我写出了人生第一个爬虫程序！">
+<meta property="og:url" content="http://blog.acidwits.xyz/2020/02/07/A-0030/index.html">
 <meta property="og:site_name" content="Acid&#39;s Blog">
-<meta property="og:description" content="一个颓废宅的自我记录">
+<meta property="og:description" content="Talk is cheap, show me the code.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200207/WVgJN0GAjBa0.png?imageslim">
+<meta property="article:published_time" content="2020-02-07T15:21:02.000Z">
+<meta property="article:modified_time" content="2020-09-01T15:02:45.276Z">
 <meta property="article:author" content="Acid">
-<meta property="article:tag" content="Acid,Acidwits">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="爬虫">
+<meta property="article:tag" content="代码">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://im.acidwits.xyz/blog/20200207/WVgJN0GAjBa0.png?imageslim">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1598972879239">
+  <link rel="stylesheet" href="/css/style.css?v=1598972879209">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -137,40 +143,103 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        
-<section class="nexmoe-archives">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
+          <img data-src="http://im.acidwits.xyz/blog/20200207/FMsT9EodB3yh.jpg" data-sizes="auto" alt="我写出了人生第一个爬虫程序！" class="lazyload">
+          <h1>我写出了人生第一个爬虫程序！</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月07日</a>
+    <a><i class="nexmoefont icon-areachart"></i>278 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
 
-    <article>
-        
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                
+            </div>
+        </div>
+      </div>
+    
+  </div>
 
-        
-            <h2>2020</h2>
-            <ul>
-            
-                <li><span>08-30</span><a href="/2020/08/30/hello-world/" >Hello World</a></li>
-            
-                <li><span>02-10</span><a href="/2020/02/10/A-0032/" >干脆面集卡？香吗？</a></li>
-            
-                <li><span>02-07</span><a href="/2020/02/07/A-0030/" >我写出了人生第一个爬虫程序！</a></li>
-            
-                <li><span>01-28</span><a href="/2020/01/28/A-0026/" >我的2019网易云年度听歌报告</a></li>
-            
-                <li><span>01-27</span><a href="/2020/01/27/A-0025/" >超实用的Win10技巧</a></li>
-            
-                <li><span>01-27</span><a href="/2020/01/27/A-0024/" >新建Hexo文章后自动打开Typora编辑</a></li>
-            
-                <li><span>01-27</span><a href="/2020/01/27/A-0023/" >用spacedesk来扩展自己的屏幕</a></li>
-            
-                <li><span>01-22</span><a href="/2020/01/22/A-0020/" >超简单方法制作Windows To Go</a></li>
-            
-                <li><span>01-22</span><a href="/2020/01/22/A-0019/" >七牛云10G空间+MPic=个人图床服务</a></li>
-            
-                <li><span>01-20</span><a href="/2020/01/20/A-0018/" >《Unbroken》——Mateusz M</a></li>
-            
-            </ul>
-        
-    </article>
+  <article>
+    <blockquote>
+<p>Talk is cheap, show me the code.</p>
+</blockquote>
+<a id="more"></a>
+
+<pre><code class="python"># -*- coding:UTF-8 -*-
+import requests,sys
+from bs4 import BeautifulSoup
+if __name__ == &#39;__main__&#39;:
+    server = &#39;https://www.biqukan.com/&#39;
+    target1 = &#39;https://www.biqukan.com/2_2760/&#39;
+    webpage1 = requests.get(url = target1)
+    html_code1 = webpage1.text.encode(&#39;iso-8859-1&#39;)
+    soup1 = BeautifulSoup(html_code1)
+    index = soup1.find_all(&#39;div&#39;,class_ = &#39;listmain&#39;)
+    soup2 = BeautifulSoup(str(index[0]))
+    a = soup2.find_all(&#39;a&#39;)
+    cnt = 0
+    for each in a:
+        target2 = server+each.get(&#39;href&#39;)
+        webpage2 = requests.get(url = target2)
+        html_code2 = webpage2.text.encode(&#39;iso-8859-1&#39;)
+        soup3 = BeautifulSoup(html_code2)
+        txt = soup3.find_all(&#39;div&#39;,class_ = &#39;showtxt&#39;,id = &#39;content&#39;)
+        with open(&#39;./庆余年.txt&#39;,&#39;a&#39;) as f:
+            print(&#39;TITLE:&#39;,each.string,&#39;\n&#39;,file = f)
+            print(txt[0].text.replace(&#39;\xa0&#39;*8,&#39;\n\n&#39;),&#39;\n&#39;,file = f)
+            cnt = cnt+1
+            print(cnt)</code></pre>
+<p>这份代码还是有很多问题，但是好歹还是有成果的</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200207/WVgJN0GAjBa0.png?imageslim" alt="1" class="lazyload"></p>
+<p>感觉过程还是比较艰辛，毕竟小白<br>中间出现了字符编码问题，报错一堆，文件输出等等<br>不过成就感还是挺大的<br>感觉Python貌似确实挺慢的啊 <del>大概是我代码的问题</del> 3秒钟一章的速度<br>但是代码还是相对简单<br>学编程嘛，要有耐心！😁</p>
+
+  </article>
+
+  
+    
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Acid<br>
+    <strong>本文链接：</strong><a href="http://blog.acidwits.xyz/2020/02/07/A-0030/" title="http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;02&#x2F;07&#x2F;A-0030&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;02&#x2F;07&#x2F;A-0030&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Python/" rel="tag">Python</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag">代码</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'G8z8tDjtBWFJM97r1kSahY1H-gzGzoHsz',
+        appKey: 'osxsrHnLuCnfrDakcBDenRWI'
+    })
+</script>
 </section>
+  </div>
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
@@ -180,7 +249,7 @@
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1598972879240"></script>
+<script src="/js/app.js?v=1598972879211"></script>
   
 
 

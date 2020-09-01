@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <title>超简单方法制作Windows To Go - Acid&#39;s Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="一个颓废宅的自我记录">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+  <link rel="shortcut icon" href="https://s2.ax1x.com/2019/08/18/mlnbcj.png" type="image/png" />
+  <meta name="description" content="前言接下来就以 WTG 简称 Windows To GoWTG简单来说，就是可以随身携带的Windows系统关于WTG更多的信息的建议百度想一想，随身携带自己的系统，只要有能用的硬件，就可以方方便便继续自己的工作（写代码，写博客 玩游戏 啥的），简直草啊:satisfied:你甚至可以避开别人家电脑的密码，进自己的系统，然后……:+1:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超简单方法制作Windows To Go">
+<meta property="og:url" content="http://blog.acidwits.xyz/2020/01/22/A-0020/index.html">
+<meta property="og:site_name" content="Acid&#39;s Blog">
+<meta property="og:description" content="前言接下来就以 WTG 简称 Windows To GoWTG简单来说，就是可以随身携带的Windows系统关于WTG更多的信息的建议百度想一想，随身携带自己的系统，只要有能用的硬件，就可以方方便便继续自己的工作（写代码，写博客 玩游戏 啥的），简直草啊:satisfied:你甚至可以避开别人家电脑的密码，进自己的系统，然后……:+1:">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/GT7yieYRTCLK.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/6Sos1TOXX998.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/hWieaKjL27NA.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/NXOdxmXfUgcF.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/eHryhiIkjNo9.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/vWm8aPtd0MzK.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/BOap4DGM6fA5.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/euypND5c57kY.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/y8zaJG9i5WvN.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/sN6f2FpaskcV.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/fyhWtpw4CRIT.jpg?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/MStPLLrK07Tm.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/adhGbIPCHWRf.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/bo8z1WpHGy6y.PNG">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/89yUr29XKc6c.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/e2XRwhUiyFlS.png?imageslim">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20200123/kJDByC64jXrl.png?imageslim">
+<meta property="article:published_time" content="2020-01-22T12:32:19.000Z">
+<meta property="article:modified_time" content="2020-09-01T15:02:25.118Z">
+<meta property="article:author" content="Acid">
+<meta property="article:tag" content="Windows To Go">
+<meta property="article:tag" content="Dism++">
+<meta property="article:tag" content="Windows系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://im.acidwits.xyz/blog/20200123/GT7yieYRTCLK.png?imageslim">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css?v=233" crossorigin>
+  
+  <link rel="stylesheet" href="/css/style.css?v=1598972879215">
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://s2.ax1x.com/2019/09/30/uNiRqe.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Acid" class="mdui-btn mdui-btn-icon"><img src="https://s2.ax1x.com/2019/08/18/mlK9dP.png" alt="Acid"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Acid">
+            <img src="https://s2.ax1x.com/2019/08/18/mlK9dP.png" alt="Acid" alt="Acid">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>14</div>
+        <div><span>标签</span>39</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/links.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:blog.acidwits.xyz" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/347988923" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/Acidwits/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/2019/" style="font-size: 10px;">2019</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Dism/" style="font-size: 10px;">Dism++</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/MPic/" style="font-size: 10px;">MPic</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/RaspBerry-Pi/" style="font-size: 10px;">RaspBerry Pi</a> <a href="/tags/Typora/" style="font-size: 10px;">Typora</a> <a href="/tags/Win10/" style="font-size: 10px;">Win10</a> <a href="/tags/Windows-To-Go/" style="font-size: 10px;">Windows To Go</a> <a href="/tags/Windows%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">Windows系统</a> <a href="/tags/spacedesk/" style="font-size: 10px;">spacedesk</a> <a href="/tags/%E4%B8%83%E7%89%9B%E4%BA%91/" style="font-size: 10px;">七牛云</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">个人图床</a> <a href="/tags/%E4%B8%AD%E5%A5%96/" style="font-size: 10px;">中奖</a> <a href="/tags/%E4%BA%91%E5%AD%98%E5%82%A8/" style="font-size: 10px;">云存储</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 10px;">代码</a> <a href="/tags/%E5%85%8D%E8%B4%B9/" style="font-size: 10px;">免费</a> <a href="/tags/%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB/" style="font-size: 10px;">功夫熊猫</a> <a href="/tags/%E5%8A%B1%E5%BF%97/" style="font-size: 10px;">励志</a> <a href="/tags/%E5%90%AC%E6%AD%8C%E6%8A%A5%E5%91%8A/" style="font-size: 10px;">听歌报告</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">图床</a> <a href="/tags/%E5%AE%9E%E7%94%A8/" style="font-size: 10px;">实用</a> <a href="/tags/%E5%B1%8F%E5%B9%95/" style="font-size: 10px;">屏幕</a> <a href="/tags/%E5%B9%B2%E8%84%86%E9%9D%A2/" style="font-size: 10px;">干脆面</a> <a href="/tags/%E5%BA%B7%E5%B8%88%E5%82%85%E9%A6%99%E7%88%86%E8%84%86/" style="font-size: 10px;">康师傅香爆脆</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 10px;">效率</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E7%BD%91%E6%98%93%E4%BA%91/" style="font-size: 10px;">网易云</a> <a href="/tags/%E8%87%AA%E5%8A%A8/" style="font-size: 10px;">自动</a> <a href="/tags/%E8%8B%B1%E6%96%87/" style="font-size: 10px;">英文</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 10px;">视频</a> <a href="/tags/%E9%9B%86%E5%8D%A1/" style="font-size: 10px;">集卡</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">音乐</a>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+<style>
+.nexmoe-widget .archive-list-count{
+	position : absolute;
+	right: 15px;
+	top:9px;
+	color: #DDD;
+}
+</style>
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Acid
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 33.285714285714285%;"> 
+          <img data-src="http://im.acidwits.xyz/blog/20200123/LuzwIi53qxlc.jpg" data-sizes="auto" alt="超简单方法制作Windows To Go" class="lazyload">
+          <h1>超简单方法制作Windows To Go</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年01月22日</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.3k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
+</div>
+
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%90%E6%96%99"><span class="toc-number">2.</span> <span class="toc-text">材料</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AD%98%E5%82%A8%E4%BB%8B%E8%B4%A8"><span class="toc-number">2.1.</span> <span class="toc-text">1.存储介质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F"><span class="toc-number">2.2.</span> <span class="toc-text">2.系统镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Dism"><span class="toc-number">2.3.</span> <span class="toc-text">3.Dism++</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E2%80%9C%E6%A1%88%E4%BE%8B%E2%80%9D"><span class="toc-number">4.1.</span> <span class="toc-text">使用“案例”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C"><span class="toc-number">4.2.</span> <span class="toc-text">使用体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">4.3.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-number">4.4.</span> <span class="toc-text">一些测试数据</span></a></li></ol></li></ol>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <article>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>接下来就以 <code>WTG</code> 简称 <code>Windows To Go</code><br>WTG简单来说，就是可以随身携带的Windows系统<br>关于WTG更多的信息的建议百度<br>想一想，随身携带自己的系统，只要有能用的硬件，就可以方方便便继续自己的工作（写代码，写博客 <del>玩游戏</del> 啥的），简直<a target="_blank" rel="noopener" href="https://www.sohu.com/a/323423195_99967847">草</a>啊:satisfied:<br>你甚至可以避开别人家电脑的密码，进自己的系统，然后……:+1:</p>
+<a id="more"></a>
+
+<h1 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h1><p>1.存储介质<br>2.系统镜像<br>3.Dism++</p>
+<h2 id="1-存储介质"><a href="#1-存储介质" class="headerlink" title="1.存储介质"></a>1.存储介质</h2><p>选取存储介质主要是考虑两方面：速度和容量 <del>废话</del><br>因为系统运行时要进行大量文件的读写，所以无论是要装在U盘里还是移动固态啥的，盘的文件读写速度不能太低，尤其是4k文件的读写速度会很影响系统运行的流畅度<br>至于容量，一个镜像展开就10G了吧，建议32G起步，不过如果是装极限精简 <del>阉割</del> 版的系统，16G可以试一试</p>
+<p>那么我在用的装了WTG有<code>SandDisk CZ600 32G</code>和<code>Tigo S300 120G</code>（加了个ORICO硬盘壳）<br>其实闪迪CZ600已经可以比较流畅的运行WTG了，开机速度也还行，下面的CDM测速可以作为选择存储介质的参考</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/GT7yieYRTCLK.png?imageslim" alt="1" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/6Sos1TOXX998.png?imageslim" alt="SanDisk测速 via USB3.0" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/hWieaKjL27NA.png?imageslim" alt="3" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/NXOdxmXfUgcF.png?imageslim" alt="TigoSSD测速 via SATA3.0" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/eHryhiIkjNo9.png?imageslim" alt="TigoSSD测速 via USB3.0" class="lazyload"></p>
+<h2 id="2-系统镜像"><a href="#2-系统镜像" class="headerlink" title="2.系统镜像"></a>2.系统镜像</h2><p>镜像文件呢，我一般是从<a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN，我告诉你</a>下载（ISO镜像），或者是在<a target="_blank" rel="noopener" href="https://www.winos.me/">WINOS</a>上找一些大佬做的精简版系统（多为ESD镜像）<br>我这里就用一个MSDN下载的Win10镜像做一下</p>
+<h2 id="3-Dism"><a href="#3-Dism" class="headerlink" title="3.Dism++"></a>3.<a target="_blank" rel="noopener" href="https://www.chuyu.me/">Dism++</a></h2><p>这个经常装系统的人肯定都熟知了，功能很强大，本教程就用它来制作WTG<br>也有其他的非官方工具，当然也可以用微软官方的WTG制作工具，但是Dism++绝对时最简单的，我也试过其他方法制作WTG，但都失败了:joy:</p>
+<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>1.插好U盘，备份好数据，待会儿要格式化<br>2.打开Dism++</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/vWm8aPtd0MzK.png?imageslim" alt="6" class="lazyload"></p>
+<p>3.文件-释放映像<br>4.选择镜像文件<br>5.选择目标镜像<br>6.选择安装路径（就是U盘啦）<br>7.勾选<code>WindowsToGo</code>、<code>添加引导</code>、<code>格式化</code></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/BOap4DGM6fA5.png?imageslim" alt="7" class="lazyload"></p>
+<p>8.确定，然后再确定 <del>是因为看不懂</del><br>9.等待释放完成 用时：34mins</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/euypND5c57kY.png?imageslim" alt="8" class="lazyload"></p>
+<p>10.拔掉U盘、关机<br>11.在电脑开机时选择从U盘启动，这里是两次，第一次不会进桌面就自动关机了，第二次才能进，不知道是不是只有这种方法才会有这种情况（第一次在一台电脑上用WTG都要自动重启一次）</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/y8zaJG9i5WvN.png?imageslim" alt="9" class="lazyload"></p>
+<p>12.一堆设置后总是算进了桌面 用时：18mins</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/sN6f2FpaskcV.png?imageslim" alt="10" class="lazyload"></p>
+<p>13.结束，记得激活+装驱动，查看是否激活成功可以在cmd中输入以下命令</p>
+<pre><code class="cmd">slmgr /xpr</code></pre>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/fyhWtpw4CRIT.jpg?imageslim" alt="11" class="lazyload"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><h2 id="使用“案例”"><a href="#使用“案例”" class="headerlink" title="使用“案例”"></a>使用“案例”</h2><p>1.在某信竞辅导机构上课时，机房电脑烂的不行，老师、学生电脑疯狂蓝屏 <del>蓝屏的钙，好喝的钙</del>，于是有大佬上去给老师开了WTG，这还不算完，又开了VMware上Win7系统为了能用极域给大家广播（可能是Win10用不了极域吧），直接360度装x成功 <del>虽然后来网络的配置耽误了点上课时间而且后来也没开广播讲课</del><br>2.在机房可以用教师机（学生机USB口被禁了）上WTG然后爽，因为我学校机房都是WinXP，好多软件都不支持:expressionless:<br>3.本次元旦晚会在班里用了WTG+WallpaperEngine来带给大家更好的视觉体验（班里本来是Win7，而且是桌面全是各种课件乱七八糟那种）</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/MStPLLrK07Tm.png?imageslim" alt="元旦" class="lazyload"></p>
+<p><del>我也不知道为什么灯笼要横在投影中间</del></p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/adhGbIPCHWRf.png?imageslim" alt="教室机" class="lazyload"></p>
+<p>4.大多数人可能会选择WTG在Mac上，毕竟Mac上玩游戏肯定不如Windows+Steam:wink:<br>5.甚至可以把它当PE使</p>
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>1.除第一次开机时间较长之外，SanDisk CZ600上的WTG正常开机35s左右（USB3.0），也没什么不可忍受的，换SSD+精简版系统的话应该会更快一点 <del>要是你只有USB2.0…（比如我在学校机房）要啥自行车啊…</del><br>2.软件开启速度也还行，长时间使用也没有明显变慢<br>3.WTG+OneDrive+Git简直随时随地写代码<br>还有各种便利，总之非常赞:+1:</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>1.使用了MSDN的镜像，光是系统装好就占这么大空间，我一般用精简版的装好多软件比这空间占用都小</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/bo8z1WpHGy6y.PNG" alt="12" class="lazyload"></p>
+<p>2.CZ600其实还没有某些“1元1G”的固态性价比高，但是一般固态容量都从120G开始，这就看自己的需求了，若只是一个工具性的小系统，有轻度的使用需求，用个USB3.0的32G U盘就可以了，若是需求较大，上一块SSD也没毛病，至于固态U盘emm，散热应该不会太好，倒是更小巧一些<br>3.换一个电脑用WTG可能会有必要装一些驱动<br>4.ESD镜像文件的释放同上</p>
+<h2 id="一些测试数据"><a href="#一些测试数据" class="headerlink" title="一些测试数据"></a>一些测试数据</h2><p>1.CZ600 via USB2.0</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/89yUr29XKc6c.png?imageslim" alt="13" class="lazyload"></p>
+<p>2.SanDisk 32G TF卡 via USB2.0</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/e2XRwhUiyFlS.png?imageslim" alt="14" class="lazyload"></p>
+<p>3.某Seagate HDD</p>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20200123/kJDByC64jXrl.png?imageslim" alt="15" class="lazyload"></p>
+
+  </article>
+
+  
+    
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Acid<br>
+    <strong>本文链接：</strong><a href="http://blog.acidwits.xyz/2020/01/22/A-0020/" title="http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;01&#x2F;22&#x2F;A-0020&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;01&#x2F;22&#x2F;A-0020&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Dism/" rel="tag">Dism++</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Windows-To-Go/" rel="tag">Windows To Go</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Windows%E7%B3%BB%E7%BB%9F/" rel="tag">Windows系统</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'G8z8tDjtBWFJM97r1kSahY1H-gzGzoHsz',
+        appKey: 'osxsrHnLuCnfrDakcBDenRWI'
+    })
+</script>
+</section>
+  </div>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script >hljs.initHighlightingOnLoad();</script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+<script src="/js/app.js?v=1598972879216"></script>
+  
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?d3c7f222c42a92d80bbf4b64c9f0d266';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+
+</html>
