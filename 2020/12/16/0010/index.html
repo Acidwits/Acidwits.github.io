@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>简单开箱树莓派3B+ - Acid&#39;s Blog</title>
+  <title>Game of Life——用Python实现简单的元胞自动机 - Acid&#39;s Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="一个颓废宅的自我记录">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,37 +12,26 @@
   
 
   <link rel="shortcut icon" href="https://s2.ax1x.com/2019/08/18/mlnbcj.png" type="image/png" />
-  <meta name="description" content="当我2020年再来修改这文章时，看着新出的树莓派4代，我的心在滴血">
+  <meta name="description" content="Python课老师留了一个编程大作业，两周时间，要用Python实现简单的元胞自动机，瞅了一眼介绍的文档，好家伙六页doc，地铁老人看手机.jpg 好吧，耐下性子仔细看了看发现就是个模拟，没有什么要动脑子的地方 两小时写完代码，一个半小时都浪费在看文档了淦后来发现有同学发了介绍元胞自动机的视频，一看就懂">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单开箱树莓派3B+">
-<meta property="og:url" content="http://blog.acidwits.xyz/2019/05/01/0002/index.html">
+<meta property="og:title" content="Game of Life——用Python实现简单的元胞自动机">
+<meta property="og:url" content="http://blog.acidwits.xyz/2020/12/16/0010/index.html">
 <meta property="og:site_name" content="Acid&#39;s Blog">
-<meta property="og:description" content="当我2020年再来修改这文章时，看着新出的树莓派4代，我的心在滴血">
+<meta property="og:description" content="Python课老师留了一个编程大作业，两周时间，要用Python实现简单的元胞自动机，瞅了一眼介绍的文档，好家伙六页doc，地铁老人看手机.jpg 好吧，耐下性子仔细看了看发现就是个模拟，没有什么要动脑子的地方 两小时写完代码，一个半小时都浪费在看文档了淦后来发现有同学发了介绍元胞自动机的视频，一看就懂">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjEFJ.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjVY9.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjFwF.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1Pjko4.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjieU.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjZWR.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjmS1.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjnQx.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjKOK.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjQeO.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1PjlwD.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1Pj1Te.jpg">
-<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1Pj8FH.jpg">
-<meta property="article:published_time" content="2019-05-01T14:40:18.000Z">
-<meta property="article:modified_time" content="2020-11-07T09:55:40.623Z">
+<meta property="og:image" content="http://im.acidwits.xyz/blog/20201216211832.png?imageslim">
+<meta property="article:published_time" content="2020-12-16T12:33:05.000Z">
+<meta property="article:modified_time" content="2020-12-16T13:19:32.850Z">
 <meta property="article:author" content="Acid">
-<meta property="article:tag" content="Raspberry Pi">
-<meta property="article:tag" content="树莓派">
-<meta property="article:tag" content="开箱">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="元胞自动机">
+<meta property="article:tag" content="turtle">
+<meta property="article:tag" content="面向对象">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/01/20/1PjEFJ.jpg">
+<meta name="twitter:image" content="http://im.acidwits.xyz/blog/20201216211832.png?imageslim">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1608124989110">
+  <link rel="stylesheet" href="/css/style.css?v=1608124989067">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -157,16 +146,16 @@
     <div class="nexmoe-primary">
         <div class="nexmoe-post">
   
-      <div class="nexmoe-post-cover" style="padding-bottom: 57.770270270270274%;"> 
-          <img data-src="https://s2.ax1x.com/2020/01/20/1PqvJ1.jpg" data-sizes="auto" alt="简单开箱树莓派3B+" class="lazyload">
-          <h1>简单开箱树莓派3B+</h1>
+      <div class="nexmoe-post-cover" style="padding-bottom: 49.184782608695656%;"> 
+          <img data-src="http://im.acidwits.xyz/blog/20201216203955.png" data-sizes="auto" alt="Game of Life——用Python实现简单的元胞自动机" class="lazyload">
+          <h1>Game of Life——用Python实现简单的元胞自动机</h1>
       </div>
   
   
   <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2019年05月01日</a>
-    <a><i class="nexmoefont icon-areachart"></i>370 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月16日</a>
+    <a><i class="nexmoefont icon-areachart"></i>892 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
 </div>
 
   <div class="nexmoe-post-right">
@@ -174,7 +163,7 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E5%A0%86%E4%B8%9C%E8%A5%BF"><span class="toc-number">1.</span> <span class="toc-text">一堆东西</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E7%AE%B1%E6%84%9F%E5%8F%97"><span class="toc-number">2.</span> <span class="toc-text">开箱感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text">图</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%9F%E8%A7%89"><span class="toc-number">1.</span> <span class="toc-text">感觉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E8%BF%87"><span class="toc-number">2.</span> <span class="toc-text">经过</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
             </div>
         </div>
       </div>
@@ -183,56 +172,104 @@
 
   <article>
     <ul>
-<li>当我2020年再来修改这文章时，看着新出的树莓派4代，我的心在滴血</li>
+<li>Python课老师留了一个编程大作业，两周时间，要用Python实现简单的元胞自动机，瞅了一眼介绍的文档，好家伙六页doc，地铁老人看手机.jpg</li>
+<li>好吧，耐下性子仔细看了看发现就是个模拟，没有什么要动脑子的地方</li>
+<li>两小时写完代码，一个半小时都浪费在看文档了淦<del>后来发现有同学发了<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zx41187v3">介绍元胞自动机的视频</a>，一看就懂</del></li>
 </ul>
 <a id="more"></a>
 
-<h2 id="一堆东西"><a href="#一堆东西" class="headerlink" title="一堆东西"></a>一堆东西</h2><ol>
-<li><p>树莓派3代B+</p>
-</li>
-<li><p>散热片×3</p>
-</li>
-<li><p>树莓派3代B型/3B+ 专用电源适配器 5V 2.5A</p>
-</li>
-<li><p>树莓派3B/B+ 带风扇亚克力外壳 </p>
-</li>
-<li><p>金士顿（Kingston）32GB TF(Micro SD) 存储卡 U1 C10</p>
-</li>
-<li><p>bow无线键盘鼠标套装</p>
-</li>
-<li><p>HDMI线</p>
-</li>
-<li><p>VGA线</p>
-</li>
-<li><p>HDMI转VGA转换器</p>
-</li>
+<h2 id="感觉"><a href="#感觉" class="headerlink" title="感觉"></a>感觉</h2><ol>
+<li>不好玩</li>
+<li>诶，有些图形挺好看的</li>
+<li>有意思</li>
 </ol>
-<h2 id="开箱感受"><a href="#开箱感受" class="headerlink" title="开箱感受"></a>开箱感受</h2><ul>
-<li>首先是一个盒子装着树莓派主板还有集成了多种语言的说明书</li>
-<li>盒子那么小拿到的时候都惊到了</li>
-<li>然后是电源，本来以为普通的microUSB线就可以的，但看到说功率不够的话会死机，于是还要买专用电源</li>
-<li>无线键鼠不太好用 击键有时候没反应，敲着敲着就丢一个字母</li>
-<li>无线键鼠的接收器接到树莓派上（一直以为只有俩USB接口，怕不够才买了无线键鼠，结果有4个）</li>
-<li>装外壳的时候没看树莓派，直接乱拼亚克力板子 <del>反正拼成长方体就行了</del> ，后来再多次拆卸过程中掰掉了几块QAQ，于是只好用502稍微固定了一下</li>
-<li>风扇红线接4号针脚，黑线接6号针脚</li>
-<li>有说风扇噪音大的，实测其实还可以，不靠近听的话，感觉不到的</li>
+<h2 id="经过"><a href="#经过" class="headerlink" title="经过"></a>经过</h2><ol>
+<li>粗略过了一遍文档，哦，原来就是个模拟</li>
+<li>写着写着，诶，不对，老师在文档里对每个函数有好多要求，淦，不需要这么麻烦吧</li>
+<li>算了，还是按老师说的来吧</li>
+<li>作业发布两小时后完成了第一版</li>
+<li>淦，两周的作业两小时做完了，那接下来干什么</li>
+<li>游戏？！既然是作为一个游戏，只有命令行也太磕碜了吧，加个……turtle！</li>
+<li>学习turtle的一些常用函数</li>
+<li>做出了带图形化的元胞自动机游戏</li>
+<li>优化游戏体验，优化用户操作逻辑，添加必要注释</li>
+<li>代码交给了老师</li>
+<li>看了混乱博物馆的视频，另一种计算机？？不能理解……</li>
+<li>两周之后再看程序，淦啊，写了个<code>while(True):</code>，这波串味了啊，没看出来就交作业了淦</li>
+<li>讲了OOP，那再用这作业练手一下OOP叭（摒弃了老师对函数的要求，并尽力压短了代码行数）</li>
+</ol>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
+<li>命令行版和turtle版感觉代码不够简洁，就不贴出来了，反正很简单的东西</li>
 </ul>
-<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><ul>
-<li>因为图床出了点问题，把图全堆下边了</li>
+<p><img data-sizes="auto" data-src="http://im.acidwits.xyz/blog/20201216211832.png?imageslim" alt="这是turtle版本的运行效果" class="lazyload"></p>
+<ul>
+<li>接下来是OOP版本的元胞自动机程序代码</li>
+<li>用了列表推导式和三元运算符等来尽力缩短代码行数</li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjEFJ"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjEFJ.jpg" alt="1PjEFJ.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjVY9"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjVY9.jpg" alt="1PjVY9.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjFwF"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjFwF.jpg" alt="1PjFwF.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1Pjko4"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1Pjko4.jpg" alt="1Pjko4.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjieU"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjieU.jpg" alt="1PjieU.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjZWR"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjZWR.jpg" alt="1PjZWR.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjmS1"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjmS1.jpg" alt="1PjmS1.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjnQx"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjnQx.jpg" alt="1PjnQx.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjKOK"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjKOK.jpg" alt="1PjKOK.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjQeO"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjQeO.jpg" alt="1PjQeO.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1PjlwD"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1PjlwD.jpg" alt="1PjlwD.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1Pj1Te"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1Pj1Te.jpg" alt="1Pj1Te.jpg" class="lazyload"></a></p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1Pj8FH"><img data-sizes="auto" data-src="https://s2.ax1x.com/2020/01/20/1Pj8FH.jpg" alt="1Pj8FH.jpg" class="lazyload"></a></p>
+<pre><code class="python"># code by Acid
+import os, random, copy
+
+class Cell(object):
+    &#39;&#39;&#39;细胞对象&#39;&#39;&#39;
+    def __init__(self, life_prob):
+        self.alive = random.random() &lt; life_prob
+
+    def __str__(self):
+        return (&quot;* &quot; if self.alive else &quot;  &quot;)
+
+    def __eq__(self, another):
+        return self.alive == another.alive
+
+    def update(self, h, w, screen, height, width):
+        cnt = 0
+        for i in range(h - 1, h + 2):
+            for j in range(w - 1, w + 2):
+                if i &gt;= 0 and i &lt; height and j &gt;= 0 and j &lt; width:
+                    cnt += (screen[i][j].alive if i != h or j != w else 0)
+        self.alive = (True if cnt == 3 else (self.alive if cnt == 2 else False))
+
+class Screen(object):
+    &#39;&#39;&#39;生存空间对象&#39;&#39;&#39;
+    def __init__(self, para, life_prob):
+        self.height, self.width = int(para[0]), int(para[1])
+        self.screen = [[Cell(life_prob) for i in range(self.width)] for j in range(self.height)]
+
+    def __eq__(self, another):
+        return self.screen == another.screen
+
+    def show(self):
+        os.system(&quot;cls&quot;)
+        for i in range(self.height):
+            for j in range(self.width):
+                print(&quot;|&quot; + str(self.screen[i][j]) if j == 0 else (str(self.screen[i][j]) + &quot;|\n&quot; if j + 1 == self.width else self.screen[i][j]), end = &quot;&quot;)
+
+    def update(self, screen):
+        for i in range(self.height):
+            for j in range(self.width):
+                self.screen[i][j].update(i, j, screen, self.height, self.width)
+
+if __name__ == &quot;__main__&quot;:
+    screen = Screen(input(&quot;请输入行数和列数:&quot;).split(), float(input(&quot;请输入细胞生存概率：&quot;)))
+    screen.show()
+    cnt = 0
+    while True:
+        if input() == &#39;q&#39;:
+            print(&quot;退出游戏&quot;)
+            os._exit(0)
+        else:
+            temp_screen = copy.deepcopy(screen)
+            screen.update(temp_screen.screen)
+            if screen == temp_screen:
+                print(&quot;状态无更新，游戏结束&quot;)
+                os._exit(0)
+            else:
+                cnt += 1
+                screen.show()
+                print(&quot;第&quot;, cnt, &quot;次迭代&quot;)</code></pre>
+<ul>
+<li>看着这六十行代码，再看看原版的一百多行，成就感还是有的</li>
+<li>练习了turtlr、OOP、列表推导式、三元运算符、解包裹等操作，虽然作业本身简单，但是学到的东西还是挺多的，针不戳！</li>
+</ul>
 
   </article>
 
@@ -240,7 +277,7 @@
     
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>Acid<br>
-    <strong>本文链接：</strong><a href="http://blog.acidwits.xyz/2019/05/01/0002/" title="http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2019&#x2F;05&#x2F;01&#x2F;0002&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2019&#x2F;05&#x2F;01&#x2F;0002&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="http://blog.acidwits.xyz/2020/12/16/0010/" title="http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;12&#x2F;16&#x2F;0010&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;blog.acidwits.xyz&#x2F;2020&#x2F;12&#x2F;16&#x2F;0010&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -252,7 +289,7 @@
   <div class="nexmoe-post-meta nexmoe-rainbow">
     
     
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Raspberry-Pi/" rel="tag">Raspberry Pi</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%BC%80%E7%AE%B1/" rel="tag">开箱</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" rel="tag">树莓派</a>
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Python/" rel="tag">Python</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/turtle/" rel="tag">turtle</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%85%83%E8%83%9E%E8%87%AA%E5%8A%A8%E6%9C%BA/" rel="tag">元胞自动机</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" rel="tag">面向对象</a>
     
 </div>
 
@@ -280,7 +317,7 @@
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1608124989110"></script>
+<script src="/js/app.js?v=1608124989070"></script>
   
 
 
