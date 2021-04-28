@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Acid,Acidwits">
+    <meta name="description" content="一个颓废宅的自我记录">
+    <meta name="author" content="Acid">
+    
+    <title>
+        
+            GitHub+Hexo搭建个人博客（一） |
+        
+        Acid
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://s2.ax1x.com/2019/08/18/mlnbcj.png">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"blog.acidwits.xyz","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"https://s2.ax1x.com/2019/08/18/mlK9dP.png","favicon":"https://s2.ax1x.com/2019/08/18/mlnbcj.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Cease to  struggle, and you cease to live."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Acid's Blog" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            <a class="logo-title" href="/">
+                Acid
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">GitHub+Hexo搭建个人博客（一）</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="https://s2.ax1x.com/2019/08/18/mlK9dP.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Acid</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2020-10-31 13:57:12
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Blog/">Blog</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Hexo/">Hexo</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Github/">Github</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>950 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>3 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <ul>
+<li><strong>基于Windows平台，采用GitHub和Hexo搭建博客</strong></li>
+<li><strong>主要参考了<a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029" >这篇文章<i class="fas fa-external-link-alt"></i></a></strong></li>
+<li><strong>此篇文章结束可做出一个最初始的可浏览的Hexo博客界面</strong></li>
+</ul>
+<span id="more"></span>
+
+
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装<code>Git</code></h2><ul>
+<li>打开<a class="link"   target="_blank" rel="noopener" href="https://git-scm.com/" >Git官网<i class="fas fa-external-link-alt"></i></a>，在<a class="link"   target="_blank" rel="noopener" href="https://git-scm.com/downloads" >Downloads<i class="fas fa-external-link-alt"></i></a>页面下载合适版本即可</li>
+<li>安装时一路<code>next</code></li>
+<li>安装完成后打开<code>cmd</code>输入<code>git --version</code>检查是否安装成功</li>
+<li>Git安装成功后就可以用<code>Git Bash</code>代替难用的<code>cmd</code>了</li>
+</ul>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装<code>Node.js</code></h2><ul>
+<li>进入<a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/" >Node.js官网<i class="fas fa-external-link-alt"></i></a>选择长期支持版（LTS）下载并安装</li>
+<li>打开<code>Git Bash</code>输入<code>npm -v</code>，<code>node -v</code>检查是否安装成功</li>
+</ul>
+<h2 id="安装Hexo并初始化"><a href="#安装Hexo并初始化" class="headerlink" title="安装Hexo并初始化"></a>安装<code>Hexo</code>并初始化</h2><ul>
+<li>在<code>Git Bash</code>里输入<code>npm info hexo</code>查看<code>hexo包</code>的信息，如果响应很慢可以考虑换<code>淘宝npm源</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org</span><br><span class="line"><span class="comment">#换成淘宝NPM镜像 </span></span><br><span class="line">npm info hexo</span><br><span class="line"><span class="comment">#检查是否成功，若成功，则会返回hexo软件包的相关信息</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>按照<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" >Hexo官网<i class="fas fa-external-link-alt"></i></a>的提示输入命令<code>npm install hexo-cli -g</code>进行安装</li>
+<li>安装完成后输入<code>hexo -v</code>检查是否安装成功</li>
+<li>接着按照官网提示</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="comment">#这里的blog就是你的博客所在文件夹 文件夹名字自己起</span></span><br><span class="line"><span class="comment">#hexo会在这个文件夹生成一些博客相关的文件</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment">#进入这个新建的blog文件</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment">#在blog文件夹下安装必须的插件</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>初始化完成之后<code>blog</code>文件夹下会有一些文件</p>
+<ul>
+<li><code>node_modules</code> 一些依赖包</li>
+<li><code>public</code> 生成的网页文件</li>
+<li><code>scaffolds</code> 文章模板</li>
+<li><code>source</code> 文章和页面</li>
+<li><code>themes</code> 主题文件</li>
+<li><code>__config.yml</code> 配置文件</li>
+</ul>
+</li>
+<li><p><code>Git Bash</code>内输入<code>hexo s</code>即可启动本地服务</p>
+</li>
+<li><p>此时在浏览器输入网址<code>localhost:4000</code>或者<code>127.0.0.1:4000</code>就可以看到网站初始的样子了</p>
+</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://s2.ax1x.com/2020/01/20/1POfg0.jpg"
+                      alt="img"
+                ></p>
+<h2 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h2><ul>
+<li>首先要有一个GitHub账号，没有去注册一个</li>
+<li>新建一个<code>repository</code>（仓库），命名为<code>yourGitHubname.github.io</code>，比如我的就是<code>Acidwits.github.io</code>，其他默认即可，然后点击<code>Create repository</code></li>
+<li>这个仓库就是存放网页代码的位置</li>
+</ul>
+<h2 id="生成SSH-Key并添加到GitHub"><a href="#生成SSH-Key并添加到GitHub" class="headerlink" title="生成SSH Key并添加到GitHub"></a>生成<code>SSH Key</code>并添加到GitHub</h2><ul>
+<li>在<code>Git Bash</code>中，按照如下命令来</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name yourGitHubname</span><br><span class="line"><span class="comment">#后边填自己账户名，比如我就是Acidwits</span></span><br><span class="line">git config --global user.email youremail</span><br><span class="line"><span class="comment">#后边填自己GitHub账号绑定的邮箱</span></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br><span class="line"><span class="comment">#检查自己是否填对</span></span><br><span class="line">ssh-keygen -t rsa -C youremail</span><br><span class="line"><span class="comment">#创建SSH Key，一路回车即可</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>之后会告诉你在一个地方生成了<code>.ssh</code>文件夹，找到文件夹</li>
+<li>在GitHub的<code>settings</code>里找到<code>SSH and GPG keys</code>，进入并点击<code>New SSH Key</code>，<a class="link"   target="_blank" rel="noopener" href="https://github.com/settings/ssh/new" >这里是传送门<i class="fas fa-external-link-alt"></i></a></li>
+<li>找到<code>.ssh</code>文件夹下的<code>id_rsa.pub</code>，用记事本或者其他文本编辑器打开，把文件内容全部复制进去</li>
+<li>在<code>Git Bash</code>里敲入<code>ssh -T git@github.com</code>，如果配置成功，会有提示信息</li>
+</ul>
+<h2 id="将Hexo生成的网页部署到GitHub"><a href="#将Hexo生成的网页部署到GitHub" class="headerlink" title="将Hexo生成的网页部署到GitHub"></a>将Hexo生成的网页部署到GitHub</h2><ul>
+<li><p>在<code>Git Bash</code>下敲入<code>npm install hexo-deployer-git --save</code>来安装<code>hexo-deployer-git</code></p>
+</li>
+<li><p>打开<code>blog</code>文件夹（就是第三步init的那个文件夹），找到Hexo配置文件<code>__config.yml</code>，翻到最下面，照下面修改</p>
+</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/yourGitHubname/yourGithubname.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这样就可以部署了，以后每次部署只需要以下命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"><span class="comment">#删除原先生成的网页相关文件</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment">#再生成新的网页文件</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment">#部署到GitHub仓库</span></span><br><span class="line"><span class="comment">#以上三条命令即为每次部署要用到的命令</span></span><br><span class="line"><span class="comment">#最后两条可以简写为</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>部署过程中可能要求输入GitHub<code>账户名</code>和<code>密码</code>，输入就行了</li>
+<li>部署完成之后过一会就可以在<code>yourGitHubname.github.io</code>看到Hexo生成的网页了</li>
+<li>当然是一个没经任何改动的最初始的界面，别担心，之后的教程会针对主题的配置以及其他个性化美化</li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：GitHub+Hexo搭建个人博客（一）</li>
+        <li>本文作者：Acid</li>
+        <li>创建时间：2020-10-31 13:57:12</li>
+        <li>
+            本文链接：https://blog.acidwits.xyz/2020/10/31/0001/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2020/11/02/0003/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hexo新建文章之后自动在Typora中打开</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2020/09/12/mathjax%20test/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">MathJax Test</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script data-pjax
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script data-pjax>
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'G8z8tDjtBWFJM97r1kSahY1H-gzGzoHsz',
+                    appKey: 'osxsrHnLuCnfrDakcBDenRWI',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '😜尽情吐槽吧~',
+                    lang: 'zh-CN'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'Acid';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('true') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2019</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Acid</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.2</a>
+        </div>
+        
+            <div class="icp-info info-item"><a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn">冀ICP备19004055号</a></div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo并初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAGitHub%E4%BB%93%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90SSH-Key%E5%B9%B6%E6%B7%BB%E5%8A%A0%E5%88%B0GitHub"><span class="nav-number">5.</span> <span class="nav-text">生成SSH Key并添加到GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86Hexo%E7%94%9F%E6%88%90%E7%9A%84%E7%BD%91%E9%A1%B5%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="nav-number">6.</span> <span class="nav-text">将Hexo生成的网页部署到GitHub</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/code-copy.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
