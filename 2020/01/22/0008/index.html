@@ -9,9 +9,9 @@
     
     <title>
         
-            超简单方法制作Windows To Go |
+            简单地制作Windows To Go |
         
-        Acid
+        Acid&#39;s Blog
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
@@ -24,7 +24,119 @@
     KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"https://s2.ax1x.com/2019/08/18/mlK9dP.png","favicon":"https://s2.ax1x.com/2019/08/18/mlnbcj.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Cease to  struggle, and you cease to live."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.2"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
   </script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Acid's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="Acid's Blog" type="application/atom+xml">
 </head>
 
 
@@ -55,7 +167,7 @@
     <div class="header-content">
         <div class="left">
             <a class="logo-title" href="/">
-                Acid
+                Acid&#39;s Blog
             </a>
         </div>
 
@@ -181,7 +293,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">超简单方法制作Windows To Go</span>
+            <span class="title-hover-animation">简单地制作Windows To Go</span>
         </div>
 
         
@@ -199,6 +311,17 @@
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;2020-01-22 20:32:19
     </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -224,7 +347,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>675 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>677 字</span>
         </span>
     
     
@@ -245,139 +368,52 @@
         
 
         <div class="article-content markdown-body">
-            <ul>
-<li><code>Windows To Go</code>是可以随身携带的Windows系统</li>
-<li>一直想搞，但是因为各种制作工具都不太行搁置了很长时间</li>
-<li>终于有一天我发现了<code>Dism++</code>可以做到</li>
-<li>接下来以<code>WTG</code>简称<code>Windows To Go</code></li>
-</ul>
+            <p><code>Windows To Go</code>简单来说就是可以随身携带的Windows系统<br>一直想搞 但是因为各种制作工具都不太行搁置了很长时间<br>直到有一天我发现了<code>Dism++</code>可以</p>
 <span id="more"></span>
 
-<h2 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h2><ol>
+<h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ol>
 <li>存储介质</li>
 <li>系统镜像</li>
 <li>Dism++</li>
 </ol>
-<h2 id="存储介质"><a href="#存储介质" class="headerlink" title="存储介质"></a>存储介质</h2><ul>
-<li>主要考虑一下容量和速度，我自己用的是32G的闪迪CZ600，这个容量装完整的win10可能有点不太够</li>
+<h1 id="存储介质"><a href="#存储介质" class="headerlink" title="存储介质"></a>存储介质</h1><ul>
+<li>主要考虑一下容量和速度 我自己用的是32G的闪迪CZ600 这个容量装完整的win10可能有点不太够<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/GT7yieYRTCLK.png?imageslim" alt="1"><br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/6Sos1TOXX998.png?imageslim" alt="SanDisk测速 via USB3.0"></li>
+<li>4K速度是很影响使用体验的 系统运行过程中要进行大量小文件的读写</li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/GT7yieYRTCLK.png?imageslim"
-                      alt="1"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/6Sos1TOXX998.png?imageslim"
-                      alt="SanDisk测速 via USB3.0"
-                ></p>
-<ul>
-<li>4K速度是很影响使用体验的，系统运行过程中要进行大量小文件的读写</li>
+<h1 id="系统镜像"><a href="#系统镜像" class="headerlink" title="系统镜像"></a>系统镜像</h1><ul>
+<li>完整版的镜像就在<a class="link" target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">MSDN<i class="fas fa-external-link-alt"></i></a>下载</li>
+<li>精简版的我一般在<a class="link" target="_blank" rel="noopener" href="https://www.winos.me/">WINOS<i class="fas fa-external-link-alt"></i></a>下载</li>
+<li><a class="link" target="_blank" rel="noopener" href="https://windsys.whatk.me/">Windsys Project<i class="fas fa-external-link-alt"></i></a>也不错 带有一些优化</li>
 </ul>
-<h2 id="系统镜像"><a href="#系统镜像" class="headerlink" title="系统镜像"></a>系统镜像</h2><ul>
-<li>完整版的镜像就在<a class="link"   target="_blank" rel="noopener" href="https://msdn.itellyou.cn/" >MSDN<i class="fas fa-external-link-alt"></i></a>下载</li>
-<li>精简版的我一般在<a class="link"   target="_blank" rel="noopener" href="https://www.winos.me/" >WINOS<i class="fas fa-external-link-alt"></i></a>下载</li>
+<h1 id="Dism"><a href="#Dism" class="headerlink" title="Dism++"></a><a class="link" target="_blank" rel="noopener" href="https://www.chuyu.me/">Dism++<i class="fas fa-external-link-alt"></i></a></h1><ul>
+<li>很好用的工具 本教程用它来做WTG</li>
 </ul>
-<h2 id="Dism"><a href="#Dism" class="headerlink" title="Dism++"></a><a class="link"   target="_blank" rel="noopener" href="https://www.chuyu.me/" >Dism++<i class="fas fa-external-link-alt"></i></a></h2><ul>
-<li>很好用的工具</li>
-<li>用它来做WTG</li>
-</ul>
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ul>
-<li>插好U盘，备份好数据，待会格式化</li>
-<li>打开Dism++</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/vWm8aPtd0MzK.png?imageslim"
-                      alt="6"
-                ></p>
-<ul>
-<li>文件-释放镜像-选择镜像位置-选择安装路径（U盘）-勾选<code>Windwos To Go</code>，<code>添加引导</code>，<code>格式化</code></li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/BOap4DGM6fA5.png?imageslim"
-                      alt="7"
-                ></p>
-<ul>
-<li>确定两次（因为看不懂）</li>
-<li>等待释放完成</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/euypND5c57kY.png?imageslim"
-                      alt="8"
-                ></p>
-<ul>
+<h1 id="制作步骤"><a href="#制作步骤" class="headerlink" title="制作步骤"></a>制作步骤</h1><ul>
+<li>插好U盘 备份好数据 待会格式化</li>
+<li>打开Dism++<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/vWm8aPtd0MzK.png?imageslim" alt="6"></li>
+<li>文件-释放镜像-选择镜像位置-选择安装路径（U盘）-勾选<code>Windwos To Go</code> <code>添加引导</code> <code>格式化</code><br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/BOap4DGM6fA5.png?imageslim" alt="7"></li>
+<li>确定两次（当然是因为看不懂）</li>
+<li>等待释放完成<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/euypND5c57kY.png?imageslim" alt="8"></li>
 <li>释放完成后拔掉U盘</li>
-<li>重启进入BIOS，设置好从U盘启动</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/y8zaJG9i5WvN.png?imageslim"
-                      alt="9"
-                ></p>
-<ul>
-<li>过一会就可以进入桌面了，可能要进行一些设置</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/sN6f2FpaskcV.png?imageslim"
-                      alt="10"
-                ></p>
-<ul>
-<li>进入桌面后，记得激活，装必要的驱动，查询激活状态可以在cmd中输入以下代码</li>
+<li>重启进入BIOS 设置好从U盘启动<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/y8zaJG9i5WvN.png?imageslim" alt="9"></li>
+<li>过一会就可以进入桌面了 可能要进行一些设置<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/sN6f2FpaskcV.png?imageslim" alt="10"></li>
+<li>进入桌面后 记得激活 装必要的驱动 查询激活状态可以在cmd中输入以下代码</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
 
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/fyhWtpw4CRIT.jpg?imageslim"
-                      alt="11"
-                ></p>
-<h2 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h2><ul>
-<li><p>在某信竞辅导机构上课时，机房电脑烂的不行，老师、学生电脑疯狂蓝屏 <del>蓝屏的钙，好喝的钙</del>，于是有大佬上去给老师开了WTG，这还不算完，又开了VMware上Win7系统为了能用极域给大家广播（可能是Win10用不了极域吧），直接360度装x成功 <del>虽然后来网络的配置耽误了点上课时间而且后来也没开广播讲课</del></p>
-</li>
-<li><p>在机房可以用教师机（学生机USB口被禁了）上WTG然后爽，因为我学校机房都是WinXP，好多软件都不支持</p>
-</li>
-<li><p>某次元旦晚会在班里用了WTG+WallpaperEngine来带给大家更好的视觉体验（班里本来是Win7，而且是桌面全是各种课件乱七八糟那种）</p>
-</li>
+<p><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/fyhWtpw4CRIT.jpg?imageslim" alt="11"></p>
+<h1 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h1><ul>
+<li>在某信竞辅导机构上课时 机房电脑烂的不行 电脑疯狂蓝屏 <del>蓝屏的钙 好喝的钙</del> 于是有大佬上去给老师开了WTG 这还不算完 又开了VMware上Win7系统为了能用极域给大家广播（可能是Win10用不了极域吧） 直接装x成功 <del>虽然后来网络的配置耽误了点上课时间而且后来也没开广播讲课</del></li>
+<li>在机房可以用教师机（学生机USB口被禁了）上WTG然后起飞 因为我学校机房都是WinXP 好多软件都不支持</li>
+<li>某次元旦晚会在班里用了WTG+WallpaperEngine 看起来舒服多了 （班里本来是Win7 而且是桌面全是各种课件乱七八糟那种）<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/MStPLLrK07Tm.png?imageslim" alt="元旦"><br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20200123/adhGbIPCHWRf.png?imageslim" alt="教室机"></li>
+<li>在Mac上运行WTG 毕竟Mac上玩游戏肯定不如Windows+Steam</li>
+<li>可以把它当PE使</li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/MStPLLrK07Tm.png?imageslim"
-                      alt="元旦"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20200123/adhGbIPCHWRf.png?imageslim"
-                      alt="教室机"
-                ></p>
-<ul>
-<li><p>大多数人可能会选择WTG在Mac上，毕竟Mac上玩游戏肯定不如Windows+Steam</p>
-</li>
-<li><p>可以把它当PE使</p>
-</li>
-</ul>
-<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><ul>
-<li><p>除第一次开机时间较长之外，SanDisk CZ600上的WTG正常开机35s左右（USB3.0），也没什么不可忍受的，换SSD+精简版系统的话应该会更快一点 <del>要是你只有USB2.0…（比如我在学校机房）要啥自行车啊…</del></p>
-</li>
-<li><p>软件开启速度也还行，长时间使用也没有明显变慢</p>
-</li>
-<li><p>WTG+OneDrive+Git简直随时随地写代码</p>
-</li>
-<li><p>很赞</p>
-</li>
+<h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><ul>
+<li>除第一次开机时间较长之外 SanDisk CZ600上的WTG正常开机35s左右（USB3.0） 也没什么不可忍受的 换SSD+精简版系统的话应该会更快一点 <del>如果你只有USB2.0（比如我在学校机房）再好的SSD也无能为力</del></li>
+<li>软件开启速度也还行 长时间使用也没有明显变慢</li>
+<li>WTG+OneDrive+Git简直随时随地写代码</li>
+<li>一个字：赞</li>
 </ul>
 
         </div>
@@ -386,7 +422,7 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：超简单方法制作Windows To Go</li>
+        <li>本文标题：简单地制作Windows To Go</li>
         <li>本文作者：Acid</li>
         <li>创建时间：2020-01-22 20:32:19</li>
         <li>
@@ -644,7 +680,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99"><span class="nav-number">1.</span> <span class="nav-text">准备材料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E4%BB%8B%E8%B4%A8"><span class="nav-number">2.</span> <span class="nav-text">存储介质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F"><span class="nav-number">3.</span> <span class="nav-text">系统镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dism"><span class="nav-number">4.</span> <span class="nav-text">Dism++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%87%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B"><span class="nav-number">6.</span> <span class="nav-text">使用案例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C"><span class="nav-number">7.</span> <span class="nav-text">使用体验</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99"><span class="nav-number">1.</span> <span class="nav-text">准备材料</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E4%BB%8B%E8%B4%A8"><span class="nav-number">2.</span> <span class="nav-text">存储介质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F"><span class="nav-number">3.</span> <span class="nav-text">系统镜像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dism"><span class="nav-number">4.</span> <span class="nav-text">Dism++</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%B6%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="nav-number">5.</span> <span class="nav-text">制作步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B"><span class="nav-number">6.</span> <span class="nav-text">使用案例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C"><span class="nav-number">7.</span> <span class="nav-text">使用体验</span></a></li></ol>
     </div>
 </div>
         </aside>

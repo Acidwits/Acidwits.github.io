@@ -9,9 +9,9 @@
     
     <title>
         
-            VS Code配置C++环境（Win10） |
+            win10环境下VS Code的C++环境配置 |
         
-        Acid
+        Acid&#39;s Blog
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
@@ -24,7 +24,119 @@
     KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"https://s2.ax1x.com/2019/08/18/mlK9dP.png","favicon":"https://s2.ax1x.com/2019/08/18/mlnbcj.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Cease to  struggle, and you cease to live."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.2"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
   </script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Acid's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="Acid's Blog" type="application/atom+xml">
 </head>
 
 
@@ -55,7 +167,7 @@
     <div class="header-content">
         <div class="left">
             <a class="logo-title" href="/">
-                Acid
+                Acid&#39;s Blog
             </a>
         </div>
 
@@ -181,7 +293,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">VS Code配置C++环境（Win10）</span>
+            <span class="title-hover-animation">win10环境下VS Code的C++环境配置</span>
         </div>
 
         
@@ -199,6 +311,17 @@
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;2021-01-15 16:04:42
     </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%8A%80%E5%B7%A7/">技巧</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -228,12 +351,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>659 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>456 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>3 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>2 分钟</span>
         </span>
     
     
@@ -250,114 +373,38 @@
 
         <div class="article-content markdown-body">
             <ul>
-<li>Dev-C++不好看</li>
-<li>VS太大</li>
-<li>VSC针不戳</li>
+<li>待修改<br>Dev-C++不好看<br>VS太大<br>VSC真香</li>
 </ul>
 <span id="more"></span>
 
-<h2 id="下载并安装VSC"><a href="#下载并安装VSC" class="headerlink" title="下载并安装VSC"></a>下载并安装VSC</h2><ul>
-<li><a class="link"   target="_blank" rel="noopener" href="https://code.visualstudio.com/" >官网下载<i class="fas fa-external-link-alt"></i></a>对应的版本即可</li>
+<h1 id="下载并安装VSC"><a href="#下载并安装VSC" class="headerlink" title="下载并安装VSC"></a>下载并安装VSC</h1><ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://code.visualstudio.com/">官网下载<i class="fas fa-external-link-alt"></i></a>对应的版本即可<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20210115173342.png?imageslim"></li>
+<li>安装时这些全选<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115174528823.png?imageslim" alt="image-20210115174528823"></li>
+<li>安装插件<code>cpptools</code><br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/20210115173708.png?imageslim"></li>
+<li>其他有必要的插件也可以安装 如主题美化、图标美化、汉化等等</li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20210115173342.png?imageslim"
-                     
-                ></p>
-<ul>
-<li>安装时这些全选即可</li>
+<h1 id="下载并安装MinGW"><a href="#下载并安装MinGW" class="headerlink" title="下载并安装MinGW"></a>下载并安装MinGW</h1><ul>
+<li>打开<a class="link" target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/">下载网址<i class="fas fa-external-link-alt"></i></a></li>
+<li>向下翻找到这个下载<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115174000244.png?imageslim" alt="image-20210115174000244"></li>
+<li>解压<code>mingw64</code>文件夹到一个目录 这里我选择<code>C:\Program Files</code></li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115174528823.png?imageslim"
-                      alt="image-20210115174528823"
-                ></p>
-<ul>
-<li>安装插件<code>cpptools</code></li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/20210115173708.png?imageslim"
-                     
-                ></p>
-<ul>
-<li>其他有必要的插件也可以安装，如主题美化、图标美化、汉化等等</li>
-</ul>
-<h2 id="下载并安装MinGW"><a href="#下载并安装MinGW" class="headerlink" title="下载并安装MinGW"></a>下载并安装MinGW</h2><ul>
-<li>打开<a class="link"   target="_blank" rel="noopener" href="https://sourceforge.net/projects/mingw-w64/files/" >下载网址<i class="fas fa-external-link-alt"></i></a></li>
-<li>向下翻找到这个下载</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115174000244.png?imageslim"
-                      alt="image-20210115174000244"
-                ></p>
-<ul>
-<li>解压<code>mingw64</code>文件夹到一个目录，这里我选择<code>C:\Program Files</code></li>
-</ul>
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ul>
+<h1 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h1><ul>
 <li>复制<code>mingw64</code>文件夹中<code>bin</code>文件夹的路径<code>C:\Program Files\mingw64\bin</code></li>
-<li>按照图示配置环境变量</li>
+<li>按照图示配置环境变量<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115175314817.png?imageslim" alt="image-20210115175314817"></li>
+<li>测试是否配置成功 打开cmd 输入<code>gdb -v</code> 若显示版本则为成功<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115175607492.png?imageslim" alt="image-20210115175607492"></li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115175314817.png?imageslim"
-                      alt="image-20210115175314817"
-                ></p>
-<ul>
-<li>测试是否配置成功，打开cmd，输入<code>gdb -v</code>，若显示版本则为成功</li>
+<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><ul>
+<li>创建一个专门写C++代码的文件夹 在VSC中打开并新建一个cpp文件<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115180139136.png?imageslim" alt="image-20210115180139136"></li>
+<li>打开调试界面<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115180343887.png?imageslim" alt="image-20210115180343887"><br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115180807617.png?imageslim" alt="image-20210115180807617"></li>
+<li>会自动生成<code>launch.json</code>和<code>tasks.json</code> 按照下边修改</li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115175607492.png?imageslim"
-                      alt="image-20210115175607492"
-                ></p>
-<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><ul>
-<li>创建一个专门写C++代码的文件夹，在VSC中打开并新建一个cpp文件</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115180139136.png?imageslim"
-                      alt="image-20210115180139136"
-                ></p>
-<ul>
-<li>打开调试界面</li>
-</ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115180343887.png?imageslim"
-                      alt="image-20210115180343887"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115180807617.png?imageslim"
-                      alt="image-20210115180807617"
-                ></p>
-<ul>
-<li>会自动生成<code>launch.json</code>和<code>tasks.json</code>，按照下边修改</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 使用 IntelliSense 了解相关属性。 </span></span><br><span class="line">    <span class="comment">// 悬停以查看现有属性的描述。</span></span><br><span class="line">    <span class="comment">// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;g++.exe - 生成和调试活动文件&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;program&quot;</span>: <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [],</span><br><span class="line">            <span class="attr">&quot;stopAtEntry&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;environment&quot;</span>: [],</span><br><span class="line">            <span class="attr">&quot;externalConsole&quot;</span>: <span class="literal">true</span>, <span class="comment">// 修改此项为true</span></span><br><span class="line">            <span class="attr">&quot;MIMode&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;miDebuggerPath&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin\\gdb.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;setupCommands&quot;</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;为 gdb 启用整齐打印&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">                &#125;</span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;preLaunchTask&quot;</span>: <span class="string">&quot;C/C++: g++.exe build active file&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="comment">// 使用 IntelliSense 了解相关属性。 </span></span><br><span class="line">    <span class="comment">// 悬停以查看现有属性的描述。</span></span><br><span class="line">    <span class="comment">// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387</span></span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"0.2.0"</span>,</span><br><span class="line">    <span class="attr">"configurations"</span>: [</span><br><span class="line">        {</span><br><span class="line">            <span class="attr">"name"</span>: <span class="string">"g++.exe - 生成和调试活动文件"</span>,</span><br><span class="line">            <span class="attr">"type"</span>: <span class="string">"cppdbg"</span>,</span><br><span class="line">            <span class="attr">"request"</span>: <span class="string">"launch"</span>,</span><br><span class="line">            <span class="attr">"program"</span>: <span class="string">"${fileDirname}\\${fileBasenameNoExtension}.exe"</span>,</span><br><span class="line">            <span class="attr">"args"</span>: [],</span><br><span class="line">            <span class="attr">"stopAtEntry"</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">"cwd"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin"</span>,</span><br><span class="line">            <span class="attr">"environment"</span>: [],</span><br><span class="line">            <span class="attr">"externalConsole"</span>: <span class="literal">true</span>, <span class="comment">// 修改此项为true</span></span><br><span class="line">            <span class="attr">"MIMode"</span>: <span class="string">"gdb"</span>,</span><br><span class="line">            <span class="attr">"miDebuggerPath"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin\\gdb.exe"</span>,</span><br><span class="line">            <span class="attr">"setupCommands"</span>: [</span><br><span class="line">                {</span><br><span class="line">                    <span class="attr">"description"</span>: <span class="string">"为 gdb 启用整齐打印"</span>,</span><br><span class="line">                    <span class="attr">"text"</span>: <span class="string">"-enable-pretty-printing"</span>,</span><br><span class="line">                    <span class="attr">"ignoreFailures"</span>: <span class="literal">true</span></span><br><span class="line">                }</span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"preLaunchTask"</span>: <span class="string">"C/C++: g++.exe build active file"</span></span><br><span class="line">        }</span><br><span class="line">    ]</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppbuild&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;label&quot;</span>: <span class="string">&quot;C/C++: g++.exe build active file&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin\\g++.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;options&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">&quot;problemMatcher&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;$gcc&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;group&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;detail&quot;</span>: <span class="string">&quot;Task generated by Debugger.&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppbuild&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;label&quot;</span>: <span class="string">&quot;C/C++: g++.exe build active file ver(1)&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin\\g++.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;options&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;C:\\Program Files\\mingw64\\bin&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">&quot;problemMatcher&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;$gcc&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;group&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;kind&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;isDefault&quot;</span>: <span class="literal">true</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">&quot;detail&quot;</span>: <span class="string">&quot;Task generated by Debugger.&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;presentation&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;echo&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">                <span class="attr">&quot;reveal&quot;</span>: <span class="string">&quot;always&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;focus&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">                <span class="attr">&quot;panel&quot;</span>: <span class="string">&quot;new&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;showReuseMessage&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">                <span class="attr">&quot;clear&quot;</span>: <span class="literal">false</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    <span class="attr">"tasks"</span>: [</span><br><span class="line">        {</span><br><span class="line">            <span class="attr">"type"</span>: <span class="string">"cppbuild"</span>,</span><br><span class="line">            <span class="attr">"label"</span>: <span class="string">"C/C++: g++.exe build active file"</span>,</span><br><span class="line">            <span class="attr">"command"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin\\g++.exe"</span>,</span><br><span class="line">            <span class="attr">"args"</span>: [</span><br><span class="line">                <span class="string">"-g"</span>,</span><br><span class="line">                <span class="string">"${file}"</span>,</span><br><span class="line">                <span class="string">"-o"</span>,</span><br><span class="line">                <span class="string">"${fileDirname}\\${fileBasenameNoExtension}.exe"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"options"</span>: {</span><br><span class="line">                <span class="attr">"cwd"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin"</span></span><br><span class="line">            },</span><br><span class="line">            <span class="attr">"problemMatcher"</span>: [</span><br><span class="line">                <span class="string">"$gcc"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"group"</span>: <span class="string">"build"</span>,</span><br><span class="line">            <span class="attr">"detail"</span>: <span class="string">"Task generated by Debugger."</span></span><br><span class="line">        },</span><br><span class="line">        {</span><br><span class="line">            <span class="attr">"type"</span>: <span class="string">"cppbuild"</span>,</span><br><span class="line">            <span class="attr">"label"</span>: <span class="string">"C/C++: g++.exe build active file ver(1)"</span>,</span><br><span class="line">            <span class="attr">"command"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin\\g++.exe"</span>,</span><br><span class="line">            <span class="attr">"args"</span>: [</span><br><span class="line">                <span class="string">"-g"</span>,</span><br><span class="line">                <span class="string">"${file}"</span>,</span><br><span class="line">                <span class="string">"-o"</span>,</span><br><span class="line">                <span class="string">"${fileDirname}\\${fileBasenameNoExtension}.exe"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"options"</span>: {</span><br><span class="line">                <span class="attr">"cwd"</span>: <span class="string">"C:\\Program Files\\mingw64\\bin"</span></span><br><span class="line">            },</span><br><span class="line">            <span class="attr">"problemMatcher"</span>: [</span><br><span class="line">                <span class="string">"$gcc"</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">"group"</span>: {</span><br><span class="line">                <span class="attr">"kind"</span>: <span class="string">"build"</span>,</span><br><span class="line">                <span class="attr">"isDefault"</span>: <span class="literal">true</span></span><br><span class="line">            },</span><br><span class="line">            <span class="attr">"detail"</span>: <span class="string">"Task generated by Debugger."</span>,</span><br><span class="line">            <span class="attr">"presentation"</span>: {</span><br><span class="line">                <span class="attr">"echo"</span>: <span class="literal">true</span>,</span><br><span class="line">                <span class="attr">"reveal"</span>: <span class="string">"always"</span>,</span><br><span class="line">                <span class="attr">"focus"</span>: <span class="literal">false</span>,</span><br><span class="line">                <span class="attr">"panel"</span>: <span class="string">"new"</span>,</span><br><span class="line">                <span class="attr">"showReuseMessage"</span>: <span class="literal">true</span>,</span><br><span class="line">                <span class="attr">"clear"</span>: <span class="literal">false</span></span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"2.0.0"</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>之后就可以愉快的写代码了，按<code>F5</code>进行调试</li>
+<li>之后就可以愉快的写代码了 按<code>F5</code>进行调试<br><img lazyload="" src="/images/loading.svg" data-src="http://im.acidwits.xyz/blog/image-20210115182505359.png?imageslim" alt="image-20210115182505359"></li>
 </ul>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="http://im.acidwits.xyz/blog/image-20210115182505359.png?imageslim"
-                      alt="image-20210115182505359"
-                ></p>
 
         </div>
 
@@ -365,7 +412,7 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：VS Code配置C++环境（Win10）</li>
+        <li>本文标题：win10环境下VS Code的C++环境配置</li>
         <li>本文作者：Acid</li>
         <li>创建时间：2021-01-15 16:04:42</li>
         <li>
@@ -382,6 +429,21 @@
 
         
             <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2021/04/29/0013/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">MathJax Test</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
                 
                 
                     <div class="article-next">
@@ -608,7 +670,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85VSC"><span class="nav-number">1.</span> <span class="nav-text">下载并安装VSC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85MinGW"><span class="nav-number">2.</span> <span class="nav-text">下载并安装MinGW</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">配置环境变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">4.</span> <span class="nav-text">配置环境</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85VSC"><span class="nav-number">1.</span> <span class="nav-text">下载并安装VSC</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85MinGW"><span class="nav-number">2.</span> <span class="nav-text">下载并安装MinGW</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">添加环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">4.</span> <span class="nav-text">配置环境</span></a></li></ol>
     </div>
 </div>
         </aside>
