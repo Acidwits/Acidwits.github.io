@@ -160,9 +160,9 @@
     <category term="技巧" scheme="https://blog.acidwits.xyz/categories/%E6%8A%80%E5%B7%A7/"/>
     
     
-    <category term="Typora" scheme="https://blog.acidwits.xyz/tags/Typora/"/>
-    
     <category term="Hexo" scheme="https://blog.acidwits.xyz/tags/Hexo/"/>
+    
+    <category term="Typora" scheme="https://blog.acidwits.xyz/tags/Typora/"/>
     
   </entry>
   
@@ -188,9 +188,9 @@
     <category term="技巧" scheme="https://blog.acidwits.xyz/categories/%E6%8A%80%E5%B7%A7/"/>
     
     
-    <category term="Hexo" scheme="https://blog.acidwits.xyz/tags/Hexo/"/>
-    
     <category term="Blog" scheme="https://blog.acidwits.xyz/tags/Blog/"/>
+    
+    <category term="Hexo" scheme="https://blog.acidwits.xyz/tags/Hexo/"/>
     
     <category term="Github" scheme="https://blog.acidwits.xyz/tags/Github/"/>
     
